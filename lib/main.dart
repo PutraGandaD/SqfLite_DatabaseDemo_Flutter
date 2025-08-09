@@ -2,17 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:sqflite_db/home.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Home(),
-    );
-  }
+  // using prebuilt widget, MaterialApp (not custom widget)
+  // using const for constant (value not changed after runtime, better performance)
+  runApp(
+    const MaterialApp(
+        // home is default route of this app (displayed first when app started)
+        // scaffold is a material design ancestor for fixing app layout using MaterialApp widget
+        home: Home()),
+  );
 }
