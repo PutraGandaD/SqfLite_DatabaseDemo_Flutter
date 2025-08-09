@@ -96,6 +96,10 @@ class _MyWidgetState extends State<Home> {
           itemBuilder: (context, index) {
             Task task = snapshot.data![index];
             return ListTile(
+              onLongPress: () {
+                _databaseService.deleteTask(task.id);
+                setState(() {});
+              },
               title: Text(
                 task.content,
               ),
