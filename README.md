@@ -1,16 +1,11 @@
-# sqflite_db
+# SQFLite DB Database demo
 
-A new Flutter project.
+Simple to do list task app.
+With Create, Read, Update, Delete.
 
-## Getting Started
+## Screenshots
+<img width="438" height="899" alt="Screen Shot 2025-08-09 at 10 54 59 PM" src="https://github.com/user-attachments/assets/74567fd2-a70b-41ae-aa0d-adaa46aea5df" />
+<img width="443" height="899" alt="Screen Shot 2025-08-09 at 10 55 13 PM" src="https://github.com/user-attachments/assets/b2a009d0-2383-47c5-8679-7569347c1258" />
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
