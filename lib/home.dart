@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sqflite_db/models/task.dart';
 import 'package:sqflite_db/services/database_service.dart';
 
 class Home extends StatefulWidget {
@@ -90,7 +91,17 @@ class _MyWidgetState extends State<Home> {
     return FutureBuilder(
       future: _databaseService.getTasks(),
       builder: (context, snapshot) {
-        return Container();
+        return ListView.builder(
+          itemCount: snapshot.data?.length ?? 0,
+          itemBuilder: (context, index) {
+            Task task = snapshot.data![index];
+            return ListTile(
+              title: Text(
+                task.content,
+              ),
+            );
+          },
+        );
       },
     );
   }
